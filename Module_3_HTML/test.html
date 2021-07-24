@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>My Portfolio</title>
+		<!-- this is the text that shows up in a browser tab-->
+		<link rel="shortcut icon" type="image/png" href="icon_file_name.png"/>
+		<!-- this is the icon image that shows up in a browser tabe-->
+		<link rel="stylesheet" type="text/css" href="/style.css"/>
+		<!--this is the link to a remote style sheet-->
 	<style>
 		p {color: black}
 		.div1 p {color:red;} //classes are identified with a .classname
 		.div2 p {color:blue;}
+		.post-title p{font-size: 24px;}
+		.content p{font-size: 14px;}
 		#yell p {color: yellow} //ids are identified with a #idname
 	</style>
 		<title>My Portfolio</title>
@@ -13,13 +21,42 @@
 	</head>
 
 	<body>
-		<div class="div1">
-			<p>Hello</p>
+		<div class="header">
+			<p>My Blog Title</p>	
 		</div>
-		<div class="div2">
-			<p>Goodbye</p>
-			<p id="yell">AH!</a>
-		</div>
-		<p>Yo</p>
+		
+			<div class="post">
+				<p>a post</p>
+
+				<h1>Big Header</h1>
+				<h2>Not so big Header</h2>
+				<h3>Even less big Header</h3>
+				<h4>Small Header</h4>
+				<h5>More small Header</h5>
+				<h6>Smallest Header</h6>
+
+				<p>Regular text</p>
+			</div>
+			
+			<div class="post">
+				<p>another post</p>
+			</div>
+
+			<div class="footer">
+				<p>Footer stuff</p>	
+			</div>
+
+			<div class="div1">
+				<p>Hello</p>
+			</div>
+			
+			<div class="div2">
+				<p>Goodbye</p>
+				<p id="yell">AH!</a>
+			</div>
+		
+				<p>Yo</p>
+	
+
 	</body>
 </html>
