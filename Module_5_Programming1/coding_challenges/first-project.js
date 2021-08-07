@@ -1,10 +1,10 @@
 //Creating prompts to collect user data
 let weekly_income = prompt("What's your weekly income?: ");
-let food_cost = prompt("How much does your groceries cost?: ");
-let housing_cost = prompt("How much are your housing expenses?: ");
-let tranportation_cost = prompt("How much does transportation cost you?: "); 
-let other_costs = prompt("Do you have any other outstanding expenses?: ");
-let savings_goal = prompt("How much would like to save in a year?: ")
+let food_cost = prompt("How much does your weekly groceries cost?: ");
+let housing_cost = prompt("How much are your weekly housing expenses?: ");
+let tranportation_cost = prompt("How much does weekly transportation cost you?: "); 
+let other_costs = prompt("Do you have any other outstanding weekly expenses?: ");
+let savings_goal = prompt("How much you would like to save in a year?: ")
 let weekly_expenses = ""
 
 
@@ -15,9 +15,8 @@ const age = parseInt(prompt("age: "));
 
 
 
+
 //Creating conditionals for each prompt
-
-
 
 //Conditional for savings_goal prompt
 if (savings_goal == null || isNaN(savings_goal) == true){
@@ -33,6 +32,7 @@ if (savings_goal == null || isNaN(savings_goal) == true){
 
 
 
+
 //Conditional for weekly_income prompt
 if (weekly_income == null || isNaN(weekly_income) == true){
     console.log("Please enter a number: ")
@@ -42,13 +42,14 @@ if (weekly_income == null || isNaN(weekly_income) == true){
     console.log("We need a number higher than zero...");
 
 }       else{
-        weekly_expenses = w
-        console.log(weekly_expenses);
+        weekly_income = prompt("How much do you make a week?:");e
+        console.log(weekly_income);
 }
 
 
 
-//Conditional for food_cost
+
+//Conditional for food_cost prompt
 if (food_cost== null || isNaN(food_cost) == true){
     console.log("Please enter a number: ")
     food_cost = prompt("How much do you make a week?:");
@@ -63,7 +64,8 @@ if (food_cost== null || isNaN(food_cost) == true){
 
 
 
-//Conditional for housing_cost
+
+//Conditional for housing_cost prompt
 if (housing_cost == null || isNaN(housing_cost) == true){
     console.log("Please enter a number: ")
     housing_cost = prompt("How much do you make a week?:");
@@ -78,7 +80,8 @@ if (housing_cost == null || isNaN(housing_cost) == true){
 
 
 
-//Conditional for transportation_cost
+
+//Conditional for transportation_cost prompt
 if (tranportation_cost == null || isNaN(tranportation_cost) == true){
     console.log("Please enter a number: ")
     tranportation_cost = prompt("How much do you make a week?:");
@@ -93,7 +96,8 @@ if (tranportation_cost == null || isNaN(tranportation_cost) == true){
 
 
 
-//Conditional for other_costs
+
+//Conditional for other_costs prompt
 if (other_costs == null || isNaN(other_costs) == true){
     console.log("Please enter a number: ")
     other_costs = prompt("How much do you make a week?:");
@@ -105,3 +109,6 @@ if (other_costs == null || isNaN(other_costs) == true){
         other_costs = w
         console.log(other_costs);
 }
+
+
+
