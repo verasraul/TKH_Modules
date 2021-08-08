@@ -1,3 +1,9 @@
+//LINK TO CODE PEN:
+//https://codepen.io/vemrasraul/pen/NWjOVYm
+
+
+
+
 //Creating a constant variable for the user's age
 const age = parseInt(prompt("How old are you?"));
 
@@ -129,8 +135,8 @@ console.log("After deducting your expenses from your weekly earnings, you're lef
 //Creating conditional for savings goal
 let amount_needed = savings_weekly-gross_earnings
 if (gross_earnings < savings_weekly){
-    console.log("You don't have enough money left to meet your savings goal. You need to save an additional " + amount_needed + " per week, in order to reach your goal.");
+    console.log("You need to save an additional " + amount_needed + " per week, in order to reach your savings goal.");
 
 }   else {
-    console.log("You're right on track. You have enough money left over to put away for your savings goal.");
+    console.log("You're right on track. You have enough money left to stash for your savings goal.");
 }   
