@@ -1,55 +1,43 @@
-// LINK TO CODE PEN:
-// https://codepen.io/verasraul/pen/MWmzpEB
 
 
 
+// Data to be manipulated
+let quote = "Wipe the sweat off my dome, spit the phlegm on the streets Suede Timbs on my feets makes my cipher complete \
+Whether cruising in aSikh\'s\ cab, or Montero Jeep I can\'t\ call it, the beats make me falling asleep I keep falling, \
+but never falling six feet deep I\'m\ out for presidents to represent me, I\'m\ out for presidents to represent me, \
+I\'m\ out for dead presidents to represent me, ";
 
-//Creating grading prompt
-let what_grade = prompt("What was your final gade?");
+let quote_array = []
+
+let new_quote = []
+
+let new_quote_string = ""
+
+// STEP 1
+
+// Split string by blankspace into an array of words
+quote_array =  quote.split(" "); 
 
 
 
+// STEP 2
 
-//Creading check for number and blank inputs
-if (what_grade == ""){
-    console.log("Grade cannot be blank...");
-    what_grade = prompt("What was your final gade?");
+// Iterate through each string, find the letter 's' and replace it with the '$' sign
+for (let i = 0; i < quote_array.length; i++){
+    originalword = quote_array[i];
+    newwordforsmalls = originalword.replaceAll('s','$');
+    newwordforbigS = newwordforsmalls.replaceAll('S', '$');
+    new_quote.push(newwordforbigS);
+    }
+
+// STEP 3 
+
+// Merge into new string quote.
+for (let i = 0; i < new_quote.length; i++){
+    new_quote_string = new_quote_string + new_quote[i] + " ";
 }
-    else if(isNaN(what_grade) == true){
-    console.log("Grade must be a number from 0-100...")
-    what_grade = parseInt(prompt("What was your final gade?"));
-
-}   
-else {
-    what_grade;
-}
 
 
+console.log(new_quote_string);
 
 
-//Creating conditionals for each grade
-if (parseInt(what_grade) > 95){
-    console.log("You received an \"A+\".");
-}
-    else if (parseInt(what_grade) > 88 && parseInt(what_grade) <= 90 ){
-        console.log("You received an \"A\".");
-    }
-    else if (parseInt(what_grade) > 84 && parseInt(what_grade) <= 88){
-        console.log("You received a \"B+\".");
-    }
-    else if(parseInt(what_grade) > 76 && parseInt(what_grade) <= 84){
-        console.log("You received a \"C+\".");
-    }
-    else if(parseInt(what_grade) > 70 && parseInt(what_grade) <= 76){
-        console.log("You received a \"C\".");
-    }
-    else if(parseInt(what_grade) > 67 && parseInt(what_grade) <= 70){
-        console.log("You received a \"D+\".");
-    }
-    else if(parseInt(what_grade) > 64 && parseInt(what_grade) <= 67){
-        console.log("You received a \"D\".");
-    }
-    else{
-        parseInt(what_grade) <= 64;
-        console.log("You received an \"F\".");
-    }
