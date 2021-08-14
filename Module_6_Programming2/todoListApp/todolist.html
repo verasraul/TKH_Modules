@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/todolist.css">
+</head>
+<body>
+
+    <div class="header">
+        <h2 style="margin:5px">ACTION'S LIST</h2>
+        <input type="text" id="myInput" placeholder="Actions for the day...">
+        <span onclick="newElement()" class="addBtn">ADD</span>
+    </div>
+
+    <ul id="myUL">
+        <li class="checked">Go through js tutorials</li>
+        <li> Make projects></li>
+        <li> Research></li>
+        <li class="checked">Organized actions</li>
+        <li> Document code></li>
+        <li> Draft or look for new projects></li>
+        <li> Drill over some concepts></li>
+    </ul>
+    <button type="button" id="clear-list" onclick="removeAll()">Clear Actions</button>
+
+    
+    
+    <script type="text/javascript" src="js/todolist.js"></script>
+
+</body>
+</html>
