@@ -1,0 +1,15 @@
+.container-fluid{
+    font-family: sans-serif;
+    color: burlywood;
+    background-color: transparent;
+}
+
+#temp {   
+    font-family: inherit;
+    font-style: inherit;
+    color: blue;
+}
+
+#loc {
+    color: yellow;
+}
