@@ -1,10 +1,6 @@
 
 // Created variable to hold key for API:
-<<<<<<< HEAD
 var appid = ""
-=======
-let appid = "85bfccf341dfa00ef129306c98dba930"
->>>>>>> Module6
 
 // Create empty variables for the infromation that needs to be manipulated matching id elements created in the HTML file:
 let icon = ""
