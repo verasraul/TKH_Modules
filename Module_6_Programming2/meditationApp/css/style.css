@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.time-select,
+.sound-picker,
+.player-container {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.player-container{
+    position: relative;
+}
+
+.player-container svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+
+.time-display{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 50px;
+}
+
+video{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10; /* Takes image of vidoe and places it in the background. */
+}
+
+.time-select button,
+.sound-picker button {
+    color: white;
+    width: 30%;
+    height: 10%;
+    background: none;
+    border: 2px solid lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+/* Changes the color of the 'time-select' buttons when user 'hovers' over them wiht the mice. */
+.time-select button:hover{
+    color: white;
+    background: black;
+}
+
+/* Applies styling to the sound buttons. */
+.sound-picker button{
+    border: none;
+    height: 120px;
+    width: 120px;
+    /* 'border-radius' makes color background behind the buttons cirular. 
+    If the 'height' and 'width' properties were different, the button's background would not be perfectly circular. */
+    border-radius: 50%; 
+    padding: 30px;
+}
+/* Applies styling to the first sound picker button. */
+.sound-picker button:nth-child(1){
+    /* background: transparent; */
+    background: darkgray;
+}
+/* Applies styling to the second sound picker button. */
+.sound-picker button:nth-child(2){
+    /* background: #a14f49; */
+    background: lightskyblue;
+}
+/* Changes the color of the 'sound-picker' buttons when user 'hovers' over them wiht the mice. */
+.sound-picker button:hover{
+    color: white;
+    background: black;
+}
+
+.sound-picker button img{
+    height: 100%;
+    
+}
+
+
