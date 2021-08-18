@@ -1,15 +1,31 @@
+
+body {
+    margin: 100px auto;
+    min-width: 250px;
+    max-width: 25%;
+    background-color: rgb(230, 240, 87);
+}
+
 .container-fluid{
+    padding: 40px;
     font-family: sans-serif;
-    color: burlywood;
-    background-color: transparent;
+    color: darkslategray;
+    background-color: rgb(177, 206, 245);
+}
+
+#temScale{
+    color: rgb(255, 255, 255);
+    font-style: italic;
 }
 
 #temp {   
-    font-family: inherit;
-    font-style: inherit;
-    color: blue;
+    font-family: 'Lucida Sans'; /* 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
 #loc {
-    color: yellow;
+    color: darkslateblue;
+    font-family: Tahoma; /* Geneva, Verdana, Tahoma, sans-serif */
+    font-style: italic;
 }
