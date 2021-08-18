@@ -1,6 +1,6 @@
 
 // Created variable to hold key for API:
-var appid = "85bfccf341dfa00ef129306c98dba930"
+var appid = ""
 
 // Create empty variables for the infromation that needs to be manipulated matching id elements created in the HTML file:
 var icon = ""
