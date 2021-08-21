@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>ROCK - PAPER - SCISSORS</title>
+</head>
+<body>
+    
+    <!-- Create one big section (the actual game) that contains the intro screen, the score and switches to the game. -->
+
+    <!-- Creating game section/class. -->
+    <section class="game">
+        <!-- Create a class that keeps the score. The score will increment by 1 (++) depending on whos winning. -->
+        <div class="score">
+            <!-- Create 2 classes; 1 for a player & 1 for the computer: -->
+            <div class="player-score"> <!-- Player class: -->
+                <h2>player</h2>
+                <p>0</p>
+            </div>
+            
+            <div class="computer-score"> <!-- Computer class. -->
+                <h2>computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+
+        <!-- Create separate classes for intro & game pages: -->
+        <!-- Class for intro page: -->
+        <div class="intro">
+            <h1>ROCK - PAPER - SCISSORS</h1>
+            <button>Let's Play</button> <!-- Creates "Let's play" button. -->
+        </div>
+
+
+        <!-- Create game match class:-->
+        <div class="match fadeOut">
+            <!-- Class for winner: -->
+            <h2 class="winner">Choose an option:</h2>
+            <!-- Create class for the hand images -->
+            <div class="hands">
+                <!-- Add 2 hand images, 1 for the player and 1 for the computer. -->
+                <!-- Start both of them on ROCk position. -->
+                <img class="player-hand" src="./assets/rock.png" alt="">
+                <img class="computer-hand" src="./assets/rock.png" alt="">
+            </div>
+
+            <!-- Create class for game options -->
+            <div class="option">
+                <button class="rock">rock</button> <!-- Creates "rock" option button. -->
+                <button class="paper">paper</button> <!-- Creates "paper" option button. -->
+                <button class="scissors">scissors</button> <!-- Creates "scissors" option button. -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src=".js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+/* Remove the global margins: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Styles the main <section> container that holds all of the classes. */
+section {
+    height: 100vh; /* makes the section full screen */
+    background: rgb(39, 41, 68);
+    font-family: sans-serif;
+}
+
+
+/* Styles the scoreboard class. */
+.score {
+    color: rgb(236, 236, 236); 
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Styles the '<h2>' tags in the 'scores' class/section. */
+/* Sets font size for 'player' & 'computer' text of the scoreboard. */
+.score h2 {
+    font-size: 30px;
+}
+/* Styles the '<p>' tags in the 'score' class/section. */
+.score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+/* Fades-out 'intro' page images and fades-in games page images. */
+/* Styles the 'intro' class/section to make it display horizontally on the page. */
+.intro {
+    color: rgb(224, 224, 224);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* opacity: 0; */
+}
+/* Styles the '<h1>' tags in the 'intro' class/section. */
+/* Sets the font size for the 'rock - paper - scissors' text. */
+.intro h1 {
+    font-size: 50px;
+}
+.intro button, /* Styles the 'intro' class/section's "let's play" '<button>'. */
+.match button { /* Styles the 'match' class/section's "rock", 'paper' & 'scissor' '<button>'. */
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    background: rgb(45, 117, 96);
+    border-radius: 5px;
+    cursor: pointer; /* adds 'cursor' to '<button>' tags when mice hovers over it. Makes '<button>' clickable. */
+
+    /* If the line below is added, the '<button>'s in this section remain visible but not clickable. */
+    /* pointer-events: none;  */
+}
+
+
+/* Styles the 'match' class/section which will be the actual game page that loads when user is playing. */
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Styles the 'winner' class inside the 'match' class/section. */
+.winner {
+    color: rgb(224, 224, 224);
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.hands, 
+.option {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Rotates the 'player-hand' class immage to face the 'computer-hand.' */
+.player-hand {
+    transform: rotateY(180deg);
+}
+
+
+/* Create the fading in/out effect. */
+/* Create a class to add in JavaScript and then remove. */
+div.fadeOut{
+    opacity: 0;
+    pointer-events: none; /* This item makes elements on page non-clickable. */
+}
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
