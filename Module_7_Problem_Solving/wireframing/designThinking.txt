@@ -1,0 +1,78 @@
+EMPHATHISE:
+    1. What is the effect of the problem?
+        - To innovate the way that local laws are implemented.
+
+    2. What are the pain points?
+        - Lack of resources, finances and access.
+
+    3. Are they time based financially or other?
+        - No, the issues aren't necessarily time based for any particular matter.
+
+    4. What about the current situation creates this negative effect?
+        - Local laws are created/passed every day without the residents knowing or having a say.
+
+    5. Who does this hurt the most?
+        - The average person.
+
+        a. Are there multiple groups? 
+            - Yes.
+
+        b. If so, which group is affected the most?
+            - Low income groups.
+
+
+
+DEFINE THE PROBLEM:
+    1. What's the underlying source (what/who contributes to the issue(s)?
+        - Local politicians, law makers & courts.
+        - Lobbyist.
+        - Corporations.
+        - Local media.
+        - Infulential celebrities and/or public figures.
+        - Lack of access.
+
+        a. Are we looking to tackle the root cause?
+            - Yes, we are trying to create a way for users to self-organize and provide them the access and guidance they need.
+
+        b. Are we looking to directly address a single or mulitple pain point(s) of the problem?
+            - We are trying to tackle multiple pain points:
+                1. Collection of data:
+                    a. What laws are currently in place for the local area?
+                    b. When and why a law was implemented?
+                    c. Who presented the bill/law? Who voted for it? 
+                    d. How have those laws impacted the people and locale historically?
+                2. Managing Resources:
+                    a. Who's in charge of writing/presenting laws for the locale?
+                    b. who's in charge of revoking laws for the locale?
+                    c. How can they be accessed/contacted?
+                    d. Collecting and managing donations.
+                3. Surveying the target audience:
+                    a. Which law(s) would they like to implent for their area?
+                    b. Which law(s) would they like to change/update for their area?
+
+        c. Are we looking to solve the problem directly or provide information/aid our users in steps to solve the problem themselves?
+            - We are looking provide users with the proper guidance to directly influence their local laws/lawmakers.
+
+
+
+IDEATE:
+    1. Brainstrom possible solutions:
+        a. Create a web-app which can allow users to review and vote on current and new laws which they can donate money to that will be collected and utilized lobbying purposes on behalf of the users.
+        b. Create a google form petition to collect signatures.
+        c. Create a website that displays laws are currently being voted on in their are and provides information on where to vote.
+
+
+PROTOYPE:
+    1. 
+
+
+TESTING:
+    - While testing, make notes of the follwing points:
+        1. Are there any usability issues?
+            - 
+
+        2. Does the prototype miss any of the major pain points?
+            - 
+
+        3. Should any new features be implemented before re-testing?
+            - 

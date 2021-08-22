@@ -1,0 +1,55 @@
+Problem Definition: 
+    1. What is the problem you are looking to solve?
+        - How users can influnce local laws that govern their daily life.
+
+
+Customer Segments: 
+    1. Who experiences this problem and is likely to use your solution (Who is this for?)?
+        - Minorities in low income comunnities.
+
+Solution: 
+    1. What is our MVP solution to this problem?
+        - A website that can act as a liason for users to help and guide them through the steps they need to take.
+
+Key Metrics: 
+    1. How will we know if our solution is effective?
+        -  If we can get one legislation passed, removed or updated as per user's request.
+
+Unique Value Proposition: 
+    1. What makes our solution different from other solutions solving the same problem?
+        - I don't see any other solution for this on the market.
+
+
+Channels:ƒ 
+    1. How will we get our solution into the hands of those that can use it?
+        - By digitally marketing the url/site link.
+
+    2. Will it be downloaded/is it free?
+        - The site will live on the cloud or act as a webapp on mobile platforms.
+
+    3. Will you need to train people on how to use it? Etc.
+        - No formal training will be needed, instruction will be straight forward.
+        - Additional resource will provide/upgrade via the site as needed.
+
+
+Unfair Advantage: 
+    1. Is there a factor that makes your solution more effective than other solutions by the nature of a structural advantage either of the product or of your team 
+    (for example, do you have access to data that others don’t?)?
+        - My solution puts the power of choice into the people's hands as oppose to other solutions which feel random or give users ultimatums.
+
+
+Cost structure: 
+    1. What is the base cost it takes to create and maintain your solution?
+        - Startup expenses include; cost of domain name, server space, patents, trademarks, branding and legal fees.
+
+    2. What is the cost of serving one person? The 100th person?
+        - Cost per user is not available at the moment.
+
+    3. The 1000th person?
+        - Cost estimates for scaling are yet to calculated.
+
+
+Revenue Structure: 
+    1. How will your solution make revenue so it is able to fund itself and consistently provide the service?
+        - Donations, the site will take a small percentage of the monies being donated by users to push the cause.
+
