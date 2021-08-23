@@ -48,6 +48,7 @@ section {
     align-items: center;
     justify-content: space-around;
     /* opacity: 0; */
+    transition: opacity 0.5s ease;
 }
 /* Styles the '<h1>' tags in the 'intro' class/section. */
 /* Sets the font size for the 'rock - paper - scissors' text. */
@@ -55,7 +56,7 @@ section {
     font-size: 50px;
 }
 .intro button, /* Styles the 'intro' class/section's "let's play" '<button>'. */
-.match button { /* Styles the 'match' class/section's "rock", 'paper' & 'scissor' '<button>'. */
+.matchScreen button { /* Styles the 'match' class/section's "rock", 'paper' & 'scissor' '<button>'. */
     width: 150px;
     height: 50px;
     background: none;
@@ -72,11 +73,12 @@ section {
 
 
 /* Styles the 'match' class/section which will be the actual game page that loads when user is playing. */
-.match {
+.matchScreen {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
 }
 
 
