@@ -103,8 +103,9 @@ section {
 }
 
 
-/* Create the fading in/out effect. */
-/* Create a class to add in JavaScript and then remove. */
+/* Create the fade in/out effects. */
+/* Creates a <div>class called fadeOut that contains CSS styles/effects.
+   This class variable  can be used in JS to add styles/effects in to the <div> class list via scipt. */
 div.fadeOut{
     opacity: 0;
     pointer-events: none; /* This item makes elements on page non-clickable. */
