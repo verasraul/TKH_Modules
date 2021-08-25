@@ -1,6 +1,6 @@
 
 // Created variable to hold key for API:
-var appid = "85bfccf341dfa00ef129306c98dba930"
+var appid = ""
 
 // Create empty variables for the infromation that needs to be manipulated matching id elements created in the HTML file:
 let icon = ""
@@ -65,10 +65,10 @@ function sendRequest(url){
     xmlhttp.onreadystatechange = function(){
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
             // Here's where the information needed comes in that we need to pass through the update function created
-            // above to update our div sections and display information to the screen/user.
+            // above to update our <div>class and display the information.
             let data = JSON.parse(xmlhttp.responseText);
             let weather = {};
-            // data.weather[0], data.name and data.main.temp are retrieveing information from an array the API sends back once the user location is known.
+            // 'data.weather[0]', data.name and data.main.temp are retrieveing information from an array the API sends back once the user location is known.
             weather.icon = data.weather[0].icon;
             weather.loc = data.name;
             weather.temp = K2F(data.main.temp);
