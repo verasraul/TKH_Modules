@@ -103,9 +103,9 @@ const game = ()=> {
                     compareHands(this.textContent, computerChoice);
                     // Updates the images:
                     // Update player's hand image in the '.hands' class according to the <button> user 'clicks' in the event listener:
-                    playerHand.src = `./assets/${this.textContent}.png`;
+                    playerHand.src = `./images/${this.textContent}.png`;
                     // Update computer's hand image in the '.hands' class according to the random selection in computerChoice variable:
-                    computerHand.src = `./assets/${computerChoice}.png`;
+                    computerHand.src = `./images/${computerChoice}.png`;
                 }, 2000); // The time is declared in milliseconds.
                     /* NOTE: since the animations ('.style.animation') will run for 2 seconds, we set the time out duration for 2 seconds.
                        This pauses the 'compareHands' function() while the animations run & then calls 'compareHands' function() after
