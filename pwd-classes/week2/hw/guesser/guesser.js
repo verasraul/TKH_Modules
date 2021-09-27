@@ -11,7 +11,7 @@ function letterGuesser() {
         if (isNaN(userPrompt)) {
             alert("THIS IS NOT A NUMBER");
         } else if (userPrompt != randInt) {
-                alert(`You need to learn your ABC's. The index \"${randLet}\" is ${randInt}.`);
+                alert(`You need to learn your ABC's. The index # for \"${randLet}\" is ${randInt}.`);
         } else if (userPrompt == randInt) {
             alert ("YOU'RE A GENIUS AT THE ALPHABET!");
         } else if (isNaN(userPrompt)) {
