@@ -45,6 +45,27 @@ helloWorld("sp");
 //returns a grade for the score, either "A", "B", "C", "D", or "F"
 //Call that function for a few different scores and log the result 
 //to make sure it works
+function assignGrade(number) {
+  for (let grade = 60; grade <= 100; grade++) {
+    switch (true) {
+      case grade >= 90:
+          console.log(`For number grade ${grade}, you get letter grade A`);
+          break;
+      case grade >= 80:
+          console.log(`For number grade ${grade}, you get letter grade B`);
+          break;
+      case grade >= 70:
+          console.log(`For number grade ${grade}, you get letter grade C`);
+          break;
+      case grade >= 60:
+          console.log(`For number grade ${grade}, you get letter grade D`);
+          break;
+      default:
+          console.log(`For number grade ${grade}, you get letter grade F`);
+        };
+  }
+}
+assignGrade();
 
 
 
