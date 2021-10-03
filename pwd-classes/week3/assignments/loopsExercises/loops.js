@@ -45,19 +45,19 @@ function assignGrade() {
     for (let number = 60; number <= 100; number++) {
       switch (true) {
         case number >= 90:
-            console.log(`For number number ${number}, you get letter number A`);
+            console.log(`For number ${number}, you get letter number A`);
             break;
         case number >= 80:
-            console.log(`For number number ${number}, you get letter number B`);
+            console.log(`For number ${number}, you get letter number B`);
             break;
         case number >= 70:
-            console.log(`For number number ${number}, you get letter number C`);
+            console.log(`For number ${number}, you get letter number C`);
             break;
         case number >= 60:
-            console.log(`For number number ${number}, you get letter number D`);
+            console.log(`For number ${number}, you get letter number D`);
             break;
         default:
-            console.log(`For number number ${number}, you get letter number F`);
+            console.log(`For number ${number}, you get letter number F`);
           };
     }
   }
