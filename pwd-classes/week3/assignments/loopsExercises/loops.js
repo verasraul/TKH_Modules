@@ -41,24 +41,24 @@ duplicateNumber([2,7,5,9,8,7,6,3,4,1]);
 //Remembering the results from the conditionals exercise on Monday
 // use the assignGrade function by logging every value from 60 to 100:
 //your log should show "For 88, you got a B" "For 90 you got an A"etc..
-function assignGrade() {
-    for (let number = 60; number <= 100; number++) {
-      switch (true) {
-        case number >= 90:
-            console.log(`For number ${number}, you get letter number A`);
-            break;
-        case number >= 80:
-            console.log(`For number ${number}, you get letter number B`);
-            break;
-        case number >= 70:
-            console.log(`For number ${number}, you get letter number C`);
-            break;
-        case number >= 60:
-            console.log(`For number ${number}, you get letter number D`);
-            break;
-        default:
-            console.log(`For number ${number}, you get letter number F`);
-          };
+function assignGrade(grade) {
+    for (let number = 60; number <= 101; number++) {
+        switch (true) {
+            case grade >= 90:
+                console.log(`Your grade is ${grade}, you received an "A"`);
+                break;
+            case grade >= 80:
+                console.log(`Your grade is ${grade}, you received an "B"`);
+                break;
+            case grade >= 70:
+                console.log(`Your grade is ${grade}, you received an "C"`);
+                break;
+            case grade >= 60:
+                console.log(`Your grade is ${grade}, you received an "D"`);
+                break;
+            default:
+                console.log(`Your grade is ${grade}, you received an "F"`);
+              };
     }
   }
   assignGrade();
