@@ -10,31 +10,66 @@
 let lunchArray = ["Burger", "Salad", "Lasagna", "Sushi", "Meatloaf"];
 // let lunchArray = ["Burger  Salad  Lasagna Sushi  Meatloaf"];
 let lunchArrayString = ["Burger  Salad  Lasagna  Sushi  Meatloaf"];
+let testString = "THIS  IS  JUST A  TEST  ";
+const carArray = ["Bentley", "BMW", "McClaren", "Mercedez-Benz", "Ferrari", "Lamborghini"];
 
-const longestWord = (wordsArray) => {
-    let longestWord = " ";
 
-    for (let i = 0; i < wordsArray.length; i++) {
-        for (let word = i -1; word >= 0; word--) {
-            if ((wordsArray[i].length > wordsArray[word].length)){
-                longestWord = wordsArray[i];
+const getLongestString = (words) => {
+    const longestWord = () => {
+        let longestWord = " ";
+        for (let i = 0; i < words.length; i++) {
+                const element = words[i];
+            for (let word = i -1; word >= 0; word--) {
+                if ((words[i].length > words[word].length) && (words[i] > 1)){
+                    longestWord = words[i];
+                    // longestWord = longestWord.toString();
+                    // return longestWord;
+                };
             };
         };
+        console.log(`The longest word in the ${typeof words} is \"${longestWord}.\" It contains ${longestWord.length} characters.`);
     };
-    console.log(`The longest word in the array is \"${longestWord}.\" It contains ${longestWord.length} characters.`);
+    // const stringToArray = (words) => {
+    //     let tempArray = words.split(" ");
+    //     // console.log(`'tempARRAY'===${tempArray} type=${typeof tempArray}`); 
+    //     let wordsfiltered = tempArray.filter(function (i) {
+    //         return i != "";
+    //     });
+    //     console.log(`FILETERED==${wordsfiltered} type==${typeof wordsfiltered}`);
+    //     console.log(wordsfiltered);
+    //     // return wordsfiltered;
+    // };
+    if ((typeof words == "string")) {
+        let tempArray = words.split(" ");
+        // console.log(`'tempARRAY'===${tempArray} type=${typeof tempArray}`); 
+        let wordsfiltered = tempArray.filter(function (i) {
+            return (i != "") && (i.length >1);
+        }); 
+        // wordsfiltered.forEach((element) => {
+        //     let last = 0 + element.length;
+        //     let next = element;
+        //     console.log(element > last);
+        // });
+        longestWord(wordsfiltered);
+        // console.log(`Words Filtered ${wordsfiltered} type==${typeof wordsfiltered}`);
+        // // console.log(wordsfiltered);
+        // console.log("longestWord " + longestWord(wordsfiltered));
+    } else if ((typeof words == "object")) {
+        console.log(`Type of 'word' is===${typeof words}`);
+        longestWord(words);
+        };
 };
-const carArray = ["Bentley", "BMW", "McClaren", "Mercedez-Benz", "Ferrari", "Lamborghini"];
-longestWord(lunchArray);
-longestWord(carArray);
-
-const stringToArray = (word) => {
-    let stringArray = Array.from(word);
-    // let stringArray = [...word];
-    console.log(`This the new string array: ${stringArray}`);
-};
-stringToArray(lunchArrayString);
-
-
+console.log(":::testString:::")
+getLongestString(testString);
+// console.log(" this is testString = " + getLongestString(testString));
+console.log(":::carArray:::")
+getLongestString(carArray);
+// console.log(`carArray===${getLongestString(carArray)}`);
+// console.log(`lunchArray===${getLongestString(lunchArray)}`);
+console.log(":::lunchArrayString:::")
+getLongestString(lunchArrayString);
+// console.log(`lunchArrayString===${getLongestString(lunchArrayString)}`);
+console.log("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
 
 
 // Write a function that returns elements on odd positions in a list:
